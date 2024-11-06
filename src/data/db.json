@@ -1,0 +1,114 @@
+{
+  "customer": [
+    {
+      "id": "CS001",
+      "name": "Ravi krishna",
+      "address": "1st street, Nandan street, chennai 600021",
+      "taxcode": "Inclusive"
+    },
+    {
+      "id": "CS002",
+      "name": "Ramesh Kannan",
+      "address": "2nd street, Nandan street, chennai 600021",
+      "taxcode": "Exclusive"
+    },
+    {
+      "id": "CS003",
+      "name": "Kishore kumar",
+      "address": "3rd street, Nandan street, chennai 600021",
+      "taxcode": "Zero"
+    }
+  ],
+  "product": [
+    {
+      "id": "1",
+      "name": "Cricket bat",
+      "description": "High quality we can use for leather ball",
+      "price": "10001",
+      "status": true
+    },
+    {
+      "id": "3",
+      "name": "Stumbber ball",
+      "description": "Rubber ball",
+      "price": "25",
+      "status": true
+    },
+    {
+      "id": "6",
+      "name": "Keeping clove",
+      "description": "clove new",
+      "price": "300",
+      "status": true
+    },
+    {
+      "id": "11",
+      "name": "tennis bat",
+      "description": "new",
+      "price": "11",
+      "status": true
+    }
+  ],
+  "tax": [
+    {
+      "id": "Inclusive",
+      "type": "I",
+      "perc": 7
+    },
+    {
+      "id": "Exclusive",
+      "type": "E",
+      "perc": 7
+    },
+    {
+      "id": "Zero",
+      "type": "Z",
+      "perc": 0
+    }
+  ],
+  "invoice": [
+    {
+      "id": "1d23",
+      "customerid": "CS003",
+      "customername": "Kishore kumar",
+      "deliveryaddress": "3rd street, Nandan street, chennai 600021",
+      "invoicedate": "CS003",
+      "taxcode": "Zero",
+      "taxtype": "Z",
+      "taxperc": 0,
+      "total": 51238,
+      "tax": 0,
+      "nettotal": 51238,
+      "products": [
+        {
+          "productid": "6",
+          "name": "Keeping clove",
+          "qty": 4,
+          "price": "300",
+          "total": 1200
+        },
+        {
+          "productid": "1",
+          "name": "Cricket bat",
+          "qty": 4,
+          "price": "10001",
+          "total": 40004
+        },
+        {
+          "productid": "11",
+          "name": "tennis bat",
+          "qty": 3,
+          "price": "11",
+          "total": 33
+        },
+        {
+          "productid": "1",
+          "name": "Cricket bat",
+          "qty": 1,
+          "price": "10001",
+          "total": 10001
+        }
+      ]
+    }
+  ]
+}

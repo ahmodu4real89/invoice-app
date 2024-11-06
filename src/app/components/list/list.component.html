@@ -1,0 +1,47 @@
+<div class="mt-6 ml-4">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" (click)="goTo()">
+        Add Invoice
+      </button>
+</div>
+
+<div class="overflow-x-auto  mx-4">
+    <table class="min-w-full bg-white border border-gray-200 rounded-lg shadow-md">
+        <thead>
+            <tr class="bg-gray-100 border-b">
+                <th class="px-4 py-3 text-left text-gray-700 font-semibold text-sm">id</th>
+                <th class="px-4 py-3 text-left text-gray-700 font-semibold text-sm">Name</th>
+                <th class="px-4 py-3 text-left text-gray-700 font-semibold text-sm">Address</th>
+                <th class="px-4 py-3 text-left text-gray-700 font-semibold text-sm">Net Total</th>
+                
+                <th class="px-4 py-3 text-left text-gray-700 font-semibold text-sm">Action</th>
+                
+            </tr>
+        </thead>
+        
+            <!-- Sample Row -->
+            <tr class="border-b hover:bg-gray-50" *ngFor="let item of invoiceList; let i=index">
+
+                <td class="px-4 py-3 text-sm text-gray-600">{{i+1}}</td>
+                
+                <td>
+                {{item.customername}}
+                </td>
+
+                <td>
+                    {{item.deliveryaddress}}
+                 </td>
+
+                <td>
+                {{item.nettotal}}
+                </td>
+                <td class="px-4 py-3 flex space-x-2">
+                    <button
+                        class="px-4 py-3 text-xl text-white  bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none" (click)="editList(item.id)">Edit</button> 
+                    <button
+                        class="px-4 py-3 text-xl text-white bg-red-500 rounded-md hover:bg-red-600 focus:outline-none" (click)="deleteList(item.id)">Delete</button>
+                </td> 
+               
+            </tr>
+</table>
+             
+</div>
